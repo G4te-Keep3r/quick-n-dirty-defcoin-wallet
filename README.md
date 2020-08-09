@@ -5,6 +5,7 @@ cd quick-n-dirty-defcoin-wallet
 #or any sudo command, just so script doesnt have issues
 sudo ls
 
+chmod +x init.sh
 ./init.sh
 ```
 

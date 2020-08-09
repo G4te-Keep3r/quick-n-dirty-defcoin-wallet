@@ -5,13 +5,15 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y build-
 
 # Should look for bootstrap.dat.old, but for some reason that method wasn't working
 # Or looking for downloaded/extracted files, but again was not having luck
-if [ ! -f "/src/droid/bootstrap_downloaded.txt" ]; then
+if [ ! -f "~/quick-n-dirty-defcoin-wallet/bootstrap_downloaded.txt" ]; then
 	wget https://static.coindroids.com/defcoin-bootstrap.dat.tgz
 	tar -zxf defcoin-bootstrap.dat.tgz
 	mv bootstrap.dat ~/quick-n-dirty-defcoin-wallet/data/bootstrap.dat
 	rm -rf defcoin-bootstrap.dat.tgz
-	echo "bootstrap downloaded" > /src/droid/bootstrap_downloaded.txt
+	echo "bootstrap downloaded" > ~/quick-n-dirty-defcoin-wallet/bootstrap_downloaded.txt
 fi
+
+chmod +x ~/quick-n-dirty-defcoin-wallet/bin/*
 
 ~/quick-n-dirty-defcoin-wallet/bin/defcoind -conf=~/quick-n-dirty-defcoin-wallet/data/defcoin.conf
 echo 'Defcoin Node initiating'
