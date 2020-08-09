@@ -1,7 +1,7 @@
 #!/bin/sh
 #!/usr/bin/env bash
 
-sudo apt-get update && apt-get upgrade -y && apt-get install -y build-essential git perl sqlite3 libsqlite3-dev jq wget tar curl bc vim
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y build-essential git perl sqlite3 libsqlite3-dev jq wget tar curl bc vim
 
 # Should look for bootstrap.dat.old, but for some reason that method wasn't working
 # Or looking for downloaded/extracted files, but again was not having luck
