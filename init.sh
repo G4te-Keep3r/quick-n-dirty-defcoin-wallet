@@ -11,9 +11,11 @@ if [ ! -f "~/quick-n-dirty-defcoin-wallet/bootstrap_downloaded.txt" ]; then
 	mv bootstrap.dat ~/quick-n-dirty-defcoin-wallet/data/bootstrap.dat
 	rm -rf defcoin-bootstrap.dat.tgz
 	echo "bootstrap downloaded" > ~/quick-n-dirty-defcoin-wallet/bootstrap_downloaded.txt
+	echo "bootstrap downloaded"
 fi
 
 chmod +x ~/quick-n-dirty-defcoin-wallet/bin/*
+echo "bin contains executables now, starting wallet"
 
 ~/quick-n-dirty-defcoin-wallet/bin/defcoind -conf=~/quick-n-dirty-defcoin-wallet/data/defcoin.conf
 echo 'Defcoin Node initiating'
