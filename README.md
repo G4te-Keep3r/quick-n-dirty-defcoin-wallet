@@ -27,7 +27,7 @@ stop defcoind
 
 relaunch wallet
 ```
-~/quick-n-dirty-defcoin-wallet/bin/defcoind -conf=~/quick-n-dirty-defcoin-wallet/data/defcoin.conf
+~/quick-n-dirty-defcoin-wallet/bin/defcoind -conf=~/quick-n-dirty-defcoin-wallet/data/defcoin.conf -daemon
 ```
 
 

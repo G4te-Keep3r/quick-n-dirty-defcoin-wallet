@@ -18,7 +18,7 @@ chmod +x ~/quick-n-dirty-defcoin-wallet/bin/*
 echo "bin contains executables now, starting wallet"
 
 ~/quick-n-dirty-defcoin-wallet/bin/defcoind -conf=~/quick-n-dirty-defcoin-wallet/data/defcoin.conf -daemon
-echo 'Defcoin Node initiating while we wait 1m'
+echo 'Defcoin Node initiating while we wait 5m'
 sleep 5m
 echo 'and now to watch import and sync'
 
