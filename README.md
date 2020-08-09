@@ -16,6 +16,12 @@ to execute rpc calls
 ***working on removing the need for specifying conf***
 
 
+stop defcoind
+```
+~/quick-n-dirty-defcoin-wallet/bin/defcoin-cli -conf=~/quick-n-dirty-defcoin-wallet/data/defcoin.conf stop
+```
+
+
 relaunch wallet
 ```
 ~/quick-n-dirty-defcoin-wallet/bin/defcoind -conf=~/quick-n-dirty-defcoin-wallet/data/defcoin.conf
