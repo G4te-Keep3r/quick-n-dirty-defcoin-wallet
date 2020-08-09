@@ -7,7 +7,10 @@ sudo ls
 
 chmod +x init.sh
 ./init.sh
+chmod +x monsync.sh
+./monsync.sh
 ```
+while loop line error if its in init.sh
 
 to execute rpc calls
 ```
