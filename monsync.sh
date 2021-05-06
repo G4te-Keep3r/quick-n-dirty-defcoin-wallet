@@ -1,3 +1,7 @@
+echo PATH=$PATH:~/.defcoin/bin >> ~/.bashrc
+PATH=~/.defcoin/bin:"$PATH"
+echo "bin added to path, starting wallet"
+
 #while loop line error if its in init.sh, thus new file
 ###############################################################
 echo 'Defcoind started with a snapshot, so it will sync a lot faster than normal but still might take 30-60min'
