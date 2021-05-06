@@ -5,6 +5,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y build-
 
 wget https://static.coindroids.com/defcoin-bootstrap.dat.tgz
 tar -zxf defcoin-bootstrap.dat.tgz
+mkdir data
 mv bootstrap.dat data/bootstrap.dat
 rm -rf defcoin-bootstrap.dat.tgz
 echo "bootstrap downloaded"
