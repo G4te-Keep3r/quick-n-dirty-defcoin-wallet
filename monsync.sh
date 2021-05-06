@@ -1,6 +1,4 @@
-# Check to see if the wallet is finally sync'd
-###############################################################
-# prob need a diff print out for when not importing bootstrap but just catching up
+#while loop line error if its in init.sh, thus new file
 ###############################################################
 echo 'Defcoind started with a snapshot, so it will sync a lot faster than normal but still might take 30-60min'
 progress=`defcoin-cli getblockchaininfo | jq -r '.verificationprogress'`
