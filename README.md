@@ -31,6 +31,10 @@ defcoind -daemon
 see https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list for more
 
 
+todo
+---
+rpcuser/password randomly generated
+
 
 
 built off docker-droid (go back and insert link when flushing out readme)
