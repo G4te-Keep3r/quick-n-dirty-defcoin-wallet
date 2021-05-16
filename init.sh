@@ -3,6 +3,12 @@
 
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y build-essential git perl sqlite3 libsqlite3-dev jq wget tar curl bc vim
 
+echo "generating random rpc user and password"
+echo >> .defcoin/defcoin.conf
+echo rpcuser=$(pwgen 14 1) >> .defcoin/defcoin.conf
+echo rpcpassword=$(pwgen 14 1) >> .defcoin/defcoin.conf
+echo >> .defcoin/defcoin.conf
+
 wget https://static.coindroids.com/defcoin-bootstrap.dat.tgz
 tar -zxf defcoin-bootstrap.dat.tgz
 #mkdir data

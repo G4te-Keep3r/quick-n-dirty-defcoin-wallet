@@ -33,7 +33,7 @@ see https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list for more
 
 todo
 ---
-rpcuser/password randomly generated
+rpcuser/password randomly generated - DONE
 
 
 
