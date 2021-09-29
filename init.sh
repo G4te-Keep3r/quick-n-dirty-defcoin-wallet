@@ -5,8 +5,8 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y build-
 
 echo "generating random rpc user and password"
 echo >> .defcoin/defcoin.conf
-echo rpcuser=$(pwgen 14 1) >> .defcoin/defcoin.conf
-echo rpcpassword=$(pwgen 14 1) >> .defcoin/defcoin.conf
+echo rpcuser=$(LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 15) >> .defcoin/defcoin.conf
+echo rpcpassword=$(LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 15) >> .defcoin/defcoin.conf
 echo >> .defcoin/defcoin.conf
 
 wget https://static.coindroids.com/defcoin-bootstrap.dat.tgz
