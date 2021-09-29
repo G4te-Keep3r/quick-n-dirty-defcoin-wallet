@@ -4,10 +4,11 @@
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y build-essential git perl sqlite3 libsqlite3-dev jq wget tar curl bc vim
 
 echo "generating random rpc user and password"
-echo >> .defcoin/defcoin.conf
-echo rpcuser=$(LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 15) >> .defcoin/defcoin.conf
-echo rpcpassword=$(LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 15) >> .defcoin/defcoin.conf
-echo >> .defcoin/defcoin.conf
+echo >> ~/.defcoin/defcoin.conf
+# already installing a bunch of things, maybe go back to "pwgen 14 1" and add pwgen to line 4. This would be cleaner/easier to read
+echo rpcuser=$(LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 15) >> ~/.defcoin/defcoin.conf
+echo rpcpassword=$(LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 15) >> ~/.defcoin/defcoin.conf
+echo >> ~/.defcoin/defcoin.conf
 
 wget https://static.coindroids.com/defcoin-bootstrap.dat.tgz
 tar -zxf defcoin-bootstrap.dat.tgz
